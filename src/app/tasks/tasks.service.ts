@@ -4,7 +4,7 @@ import { Task } from "./task.model";
 @Injectable({
     providedIn: 'root'
 })
-export class TassksService {
+export class TasksService {
     tasks = signal<Task[]>([]);
 
     addTask(taskData: { title: string, description: string }) {
